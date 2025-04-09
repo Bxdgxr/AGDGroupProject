@@ -673,11 +673,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: a15b4c0c-fbb4-430e-bb93-57aed384870b
+  cloudProjectId: 18b8b689-4e07-4d4c-9a4f-9bb87c9fb2f8
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: AGDGroupProject
-  organizationId: bxdgxr25
+  projectName: AGDGroupProject 2025-04-09_13-26-08
+  organizationId: agdteam5
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
