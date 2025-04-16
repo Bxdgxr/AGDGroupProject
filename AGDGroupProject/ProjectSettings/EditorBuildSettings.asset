@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Overworld1_1.unity
+    guid: 42cf6b306a3d9d044909ef513b3e72ff
+  - enabled: 1
+    path: Assets/Scenes/Dylan_Scene.unity
+    guid: 27b88d0e984d18140ae8aea349d18b95
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects:

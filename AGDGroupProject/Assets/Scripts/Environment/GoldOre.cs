@@ -6,6 +6,8 @@ public class GoldOre : MonoBehaviour
     public int goldValue = 1;
     public int hitPoints = 1;
 
+    public GiveItem giveItem; // Reference to the GiveItem script
+
     // Now private and only changeable in code
     private float interactionRange = 1.5f;
     private float invincibilityTime = 0.5f;
@@ -37,6 +39,14 @@ public class GoldOre : MonoBehaviour
         if (hitPoints <= 0)
         {
             Debug.Log("Ore broken!");
+            if (giveItem != null)
+            {
+                giveItem.GiveToPlayer(); // Call the method to give gold
+            }
+            else
+            {
+                Debug.LogWarning("GiveItem script not assigned to GoldOre!");
+            }
             Destroy(gameObject);
             return true; // Mined successfully
         }

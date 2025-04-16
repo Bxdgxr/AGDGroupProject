@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f822412e820d34e9fef3788c8f9195, type: 3}
+  m_Name: Sword
+  m_EditorClassIdentifier: 
+  itemName: Magic Sword
+  description: This Sword helps me defeat the monsters in this world. Glad i have
+    this, but at what cost?
+  icon: {fileID: 3982769366796609260, guid: 23b6f31e220f52b408be48d4b336a35c, type: 3}
+  isStackable: 0

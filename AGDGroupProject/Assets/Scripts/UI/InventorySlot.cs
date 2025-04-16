@@ -1,49 +1,52 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
 public class InventorySlot : MonoBehaviour
 {
-    public Image iconImage;
-    public TextMeshProUGUI countText;
+    public Button button;
+    public Image icon;
+    public TMP_Text quantityText;
 
     private InventoryItem currentItem;
-    private int itemCount;
+    private InventoryManager manager;
 
-public void SetItem(InventoryItem item, int count = 1)
-{
-    currentItem = item;
-    itemCount = count;
-    iconImage.sprite = item.icon;
-    iconImage.enabled = true;                          // Show icon
-    countText.text = item.isStackable ? $"x{itemCount}" : "";
-    GetComponent<Button>().interactable = true;
-}
-
-
-    public void AddOne()
+    public void Init(InventoryManager inventoryManager)
     {
-        itemCount++;
-        countText.text = $"x{itemCount}";
+        manager = inventoryManager;
+        button.interactable = false;
+        button.onClick.AddListener(OnClick);
+        ClearSlot();
     }
+
+    public void SetItem(InventoryItem item)
+    {
+        currentItem = item;
+        icon.sprite = item.icon;
+        icon.enabled = true;
+        quantityText.text = item.isStackable && item.quantity > 1 ? "x" + item.quantity.ToString() : "";
+        button.interactable = true;
+    }
+
+    public void UpdateQuantity(int newQuantity)
+    {
+        currentItem.quantity = newQuantity;
+        quantityText.text = newQuantity > 1 ? newQuantity.ToString() : "";
+    }
+
+    public InventoryItem GetItem() => currentItem;
 
     public void ClearSlot()
     {
         currentItem = null;
-        itemCount = 0;
-        iconImage.enabled = false;
-        countText.text = "";
-        GetComponent<Button>().interactable = false;
+        icon.sprite = null;
+        icon.enabled = false;
+        quantityText.text = "";
+        button.interactable = false;
     }
 
-    public void OnClick()
+    private void OnClick()
     {
         if (currentItem != null)
-        {
-            FindFirstObjectByType<InventoryUI>().ShowDescription(currentItem);
-
-        }
+            manager.ShowItemDetails(this);
     }
-
-    public bool HasItem(InventoryItem item) => currentItem == item;
 }
