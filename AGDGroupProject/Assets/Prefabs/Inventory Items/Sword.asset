@@ -17,3 +17,4 @@ MonoBehaviour:
     this, but at what cost?
   icon: {fileID: 3982769366796609260, guid: 23b6f31e220f52b408be48d4b336a35c, type: 3}
   isStackable: 0
+  category: 1

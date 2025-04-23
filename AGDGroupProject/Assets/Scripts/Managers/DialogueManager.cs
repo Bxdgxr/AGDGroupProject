@@ -2,6 +2,8 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.Events;
+using System.Collections.Generic;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -14,16 +16,20 @@ public class DialogueManager : MonoBehaviour
     public Image npcPortrait;
     public float textSpeed = 0.03f;
 
+    [Header("Choices")]
+    public GameObject choiceContainer; // Panel that holds buttons
+    public GameObject choiceButtonPrefab; // Prefab with TMP_Text & Button
+
     private DialogueTrigger currentTrigger;
     private int currentIndex;
     private Coroutine typingCoroutine;
-    private UnityEngine.Events.UnityEvent pendingOnLineEnd;
+    private UnityEvent pendingOnLineEnd;
 
     public bool IsDialogueActive => dialogueUI.activeSelf;
 
     void Update()
     {
-        if (dialogueUI.activeSelf && Input.GetKeyDown(KeyCode.E))
+        if (dialogueUI.activeSelf && Input.GetKeyDown(KeyCode.E) && typingCoroutine == null && choiceContainer.activeSelf == false)
         {
             AdvanceDialogue();
         }
@@ -34,6 +40,8 @@ public class DialogueManager : MonoBehaviour
         currentTrigger = trigger;
         currentIndex = 0;
         dialogueUI.SetActive(true);
+        choiceContainer.SetActive(false);
+        ClearChoices();
 
         playerPortrait.gameObject.SetActive(false);
         npcPortrait.gameObject.SetActive(false);
@@ -43,11 +51,11 @@ public class DialogueManager : MonoBehaviour
 
     void AdvanceDialogue()
     {
-        // Cancel any ongoing typing and prevent its onLineEnd from firing
         if (typingCoroutine != null)
         {
             StopCoroutine(typingCoroutine);
             typingCoroutine = null;
+            pendingOnLineEnd?.Invoke();
             pendingOnLineEnd = null;
         }
 
@@ -79,10 +87,18 @@ public class DialogueManager : MonoBehaviour
             playerPortrait.gameObject.SetActive(false);
         }
 
-        // Store this line's onLineEnd to only trigger after full typing
         pendingOnLineEnd = line.onLineEnd;
         typingCoroutine = StartCoroutine(TypeSentence(line.sentence));
-        currentIndex++;
+
+        // Choices are shown AFTER the sentence types out, in coroutine
+        if (line.choices != null && line.choices.Length > 0)
+        {
+            currentIndex++; // Still increase index
+        }
+        else
+        {
+            currentIndex++;
+        }
     }
 
     IEnumerator TypeSentence(string sentence)
@@ -96,10 +112,52 @@ public class DialogueManager : MonoBehaviour
         }
 
         typingCoroutine = null;
-
-        // Only invoke if this sentence typed out fully
         pendingOnLineEnd?.Invoke();
         pendingOnLineEnd = null;
+
+        var line = currentTrigger.lines[currentIndex - 1];
+        if (line.choices != null && line.choices.Length > 0)
+        {
+            ShowChoices(line.choices);
+        }
+    }
+
+    void ShowChoices(DialogueChoice[] choices)
+    {
+        ClearChoices();
+        choiceContainer.SetActive(true);
+
+        foreach (DialogueChoice choice in choices)
+        {
+            GameObject choiceGO = Instantiate(choiceButtonPrefab, choiceContainer.transform);
+            TMP_Text buttonText = choiceGO.GetComponentInChildren<TMP_Text>();
+            buttonText.text = choice.choiceText;
+
+            Button btn = choiceGO.GetComponent<Button>();
+            btn.onClick.AddListener(() => OnChoiceSelected(choice.nextDialogue));
+        }
+    }
+
+    void OnChoiceSelected(DialogueTrigger nextDialogue)
+    {
+        ClearChoices();
+        if (nextDialogue != null)
+        {
+            StartDialogue(nextDialogue);
+        }
+        else
+        {
+            EndDialogue();
+        }
+    }
+
+    void ClearChoices()
+    {
+        foreach (Transform child in choiceContainer.transform)
+        {
+            Destroy(child.gameObject);
+        }
+        choiceContainer.SetActive(false);
     }
 
     void EndDialogue()
@@ -110,5 +168,6 @@ public class DialogueManager : MonoBehaviour
         currentTrigger = null;
         pendingOnLineEnd = null;
         typingCoroutine = null;
+        ClearChoices();
     }
 }

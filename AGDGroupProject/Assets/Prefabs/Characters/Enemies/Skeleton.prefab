@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 12153853616042765}
   - component: {fileID: 6645380511017055523}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Circle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,9 +73,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 325238509
+  m_SortingLayer: 2
+  m_SortingOrder: 101
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.81960785}
   m_FlipX: 0
@@ -100,7 +100,9 @@ GameObject:
   - component: {fileID: 269999374552954910}
   - component: {fileID: 186474482772351926}
   - component: {fileID: 2580382985876135496}
-  m_Layer: 0
+  - component: {fileID: 7934471077279114382}
+  - component: {fileID: 8915932535261759036}
+  m_Layer: 6
   m_Name: Skeleton
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -167,9 +169,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 325238509
+  m_SortingLayer: 2
+  m_SortingOrder: 100
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.85660374, g: 0.85660374, b: 0.85660374, a: 1}
   m_FlipX: 0
@@ -269,17 +271,80 @@ MonoBehaviour:
   player: {fileID: 0}
   rb: {fileID: 186474482772351926}
   spriteRenderer: {fileID: 0}
+  giveItem: {fileID: 7934471077279114382}
   maxHealth: 50
   damageAmount: 10
   damageCooldown: 1
   knockbackStrength: 1
   knockbackDuration: 0.5
-  arrowPrefab: {fileID: 0}
-  firePoint: {fileID: 0}
+  arrowPrefab: {fileID: 1025195778450965073, guid: 2ec45efbb1458a74c97c1e77c41b90df, type: 3}
+  firePoint: {fileID: 747299250315431024}
   shootRange: 8
   fireRate: 2
   retreatRange: 3
   retreatSpeed: 1.5
+--- !u!114 &7934471077279114382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2414258808714453518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5682c6cb021d4e04790b364a6e0c3fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryManager: {fileID: 0}
+  itemPopUpManager: {fileID: 0}
+  itemData: {fileID: 11400000, guid: 9fcd99a0fa8ac794fac5aad3334b27cf, type: 2}
+  quantity: 1
+--- !u!61 &8915932535261759036
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2414258808714453518}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 8
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &5210874653208642548
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,7 +357,7 @@ GameObject:
   - component: {fileID: 3657274118501143520}
   - component: {fileID: 8180344519733385545}
   - component: {fileID: 7783625886125625970}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +405,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_TargetDisplay: 0
 --- !u!114 &8180344519733385545
 MonoBehaviour:
@@ -392,7 +457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3262191410907738786}
   - component: {fileID: 3716944430090110224}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -455,9 +520,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 325238509
+  m_SortingLayer: 2
+  m_SortingOrder: 101
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.81960785}
   m_FlipX: 0
@@ -478,7 +543,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 747299250315431024}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ShootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -600,6 +665,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1964837415667886466, guid: acecaa062b2a3a04e8b0dc906a82dc3d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4158040753908319355, guid: acecaa062b2a3a04e8b0dc906a82dc3d, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -607,6 +676,10 @@ PrefabInstance:
     - target: {fileID: 4158040753908319355, guid: acecaa062b2a3a04e8b0dc906a82dc3d, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510192575599743259, guid: acecaa062b2a3a04e8b0dc906a82dc3d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6760059736637574082, guid: acecaa062b2a3a04e8b0dc906a82dc3d, type: 3}
       propertyPath: m_SizeDelta.x
@@ -619,6 +692,14 @@ PrefabInstance:
     - target: {fileID: 7221034311608367008, guid: acecaa062b2a3a04e8b0dc906a82dc3d, type: 3}
       propertyPath: m_Name
       value: EnemyHealthBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221034311608367008, guid: acecaa062b2a3a04e8b0dc906a82dc3d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180465557627380931, guid: acecaa062b2a3a04e8b0dc906a82dc3d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8303193915824943457, guid: acecaa062b2a3a04e8b0dc906a82dc3d, type: 3}
       propertyPath: m_AnchorMax.x

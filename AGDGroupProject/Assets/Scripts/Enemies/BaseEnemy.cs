@@ -8,6 +8,7 @@ public abstract class BaseEnemy : MonoBehaviour
     public Transform player;
     public Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
+    public GiveItem giveItem; // Reference to the GiveItem script
 
     [Header("Health Settings")]
     [SerializeField] protected int maxHealth = 50;
@@ -43,7 +44,7 @@ public abstract class BaseEnemy : MonoBehaviour
 
         originalColor = spriteRenderer.color;
 
-        // Health bar
+        // Health bar setup
         healthBarSlider = GetComponentInChildren<Slider>();
         if (healthBarSlider != null)
         {
@@ -52,6 +53,11 @@ public abstract class BaseEnemy : MonoBehaviour
             healthBarObject = healthBarSlider.gameObject;
             healthBarObject.SetActive(false);
         }
+
+        // Rigidbody2D moet Dynamic zijn, zodat de vijand kan botsen met de muren.
+        rb.bodyType = RigidbodyType2D.Dynamic;
+        rb.gravityScale = 0;
+        rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
     }
 
     protected virtual void Update()
@@ -69,6 +75,7 @@ public abstract class BaseEnemy : MonoBehaviour
         damageTimer -= Time.deltaTime;
     }
 
+    // Player collision check (trigger voor de speler)
     protected virtual void OnTriggerStay2D(Collider2D other)
     {
         if (damageTimer > 0f) return;
@@ -85,6 +92,7 @@ public abstract class BaseEnemy : MonoBehaviour
         }
     }
 
+    // When the enemy gets damaged
     public virtual void TakeDamage(int damageAmount, Vector2 knockbackDirection, float knockbackForce)
     {
         if (isInIframe) return;
@@ -124,6 +132,14 @@ public abstract class BaseEnemy : MonoBehaviour
 
     protected virtual void Die()
     {
+        if (giveItem != null)
+        {
+            giveItem.GiveToPlayer(); // Call the method to give gold
+        }
+        else
+        {
+            Debug.LogWarning("GiveItem script not assigned to BaseEnemy!");
+        }
         Destroy(gameObject);
     }
 }

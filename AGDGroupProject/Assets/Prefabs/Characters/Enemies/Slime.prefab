@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9134367662269618798}
   - component: {fileID: 4618088212518252522}
   - component: {fileID: 1793873270149513572}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_TargetDisplay: 0
 --- !u!114 &4618088212518252522
 MonoBehaviour:
@@ -115,7 +115,9 @@ GameObject:
   - component: {fileID: 7881593179307382372}
   - component: {fileID: 5649950271745529884}
   - component: {fileID: 530940472224055346}
-  m_Layer: 0
+  - component: {fileID: 6574932240166704496}
+  - component: {fileID: 6856160108802753201}
+  m_Layer: 6
   m_Name: Slime
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -181,9 +183,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 325238509
+  m_SortingLayer: 2
+  m_SortingOrder: 100
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.027450979, g: 0.8075814, b: 1, a: 1}
   m_FlipX: 0
@@ -210,15 +212,16 @@ MonoBehaviour:
   player: {fileID: 0}
   rb: {fileID: 530940472224055346}
   spriteRenderer: {fileID: 0}
-  detectionRange: 5
-  hopForce: 3
-  hopCooldown: 1.5
-  hopDuration: 0.3
+  giveItem: {fileID: 6574932240166704496}
+  maxHealth: 50
   damageAmount: 10
   damageCooldown: 1
   knockbackStrength: 1
   knockbackDuration: 0.5
-  maxHealth: 50
+  detectionRange: 5
+  hopForce: 3
+  hopCooldown: 1.5
+  hopDuration: 0.3
 --- !u!61 &5649950271745529884
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -292,6 +295,68 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &6574932240166704496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5232548354555700491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5682c6cb021d4e04790b364a6e0c3fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryManager: {fileID: 0}
+  itemPopUpManager: {fileID: 0}
+  itemData: {fileID: 11400000, guid: 2d15acf313649744591d318df5392126, type: 2}
+  quantity: 1
+--- !u!61 &6856160108802753201
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5232548354555700491}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 8
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &5498540515914053764
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1536699133530770175}
   - component: {fileID: 7339777869678610290}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Circle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,9 +430,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 325238509
+  m_SortingLayer: 2
+  m_SortingOrder: 101
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.81960785}
   m_FlipX: 0
@@ -389,7 +454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7186782579764085368}
   - component: {fileID: 211017061693935964}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -452,9 +517,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 325238509
+  m_SortingLayer: 2
+  m_SortingOrder: 101
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.81960785}
   m_FlipX: 0
@@ -566,6 +631,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1964837415667886466, guid: acecaa062b2a3a04e8b0dc906a82dc3d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4158040753908319355, guid: acecaa062b2a3a04e8b0dc906a82dc3d, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -573,6 +642,10 @@ PrefabInstance:
     - target: {fileID: 4158040753908319355, guid: acecaa062b2a3a04e8b0dc906a82dc3d, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510192575599743259, guid: acecaa062b2a3a04e8b0dc906a82dc3d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6760059736637574082, guid: acecaa062b2a3a04e8b0dc906a82dc3d, type: 3}
       propertyPath: m_SizeDelta.x
@@ -585,6 +658,14 @@ PrefabInstance:
     - target: {fileID: 7221034311608367008, guid: acecaa062b2a3a04e8b0dc906a82dc3d, type: 3}
       propertyPath: m_Name
       value: EnemyHealthBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7221034311608367008, guid: acecaa062b2a3a04e8b0dc906a82dc3d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180465557627380931, guid: acecaa062b2a3a04e8b0dc906a82dc3d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8303193915824943457, guid: acecaa062b2a3a04e8b0dc906a82dc3d, type: 3}
       propertyPath: m_AnchorMax.x

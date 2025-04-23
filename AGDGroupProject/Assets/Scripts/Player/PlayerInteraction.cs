@@ -6,6 +6,7 @@ public class PlayerInteraction : MonoBehaviour
     public int goldCount = 0;
     public float attackRange = 1f;  // The range for hitting the enemy
     public float knockbackStrength = 1f;  // Knockback strength when hitting the enemy
+    public float chestInteractionRange = 2f; // Range for opening chest
 
     private void Update()
     {
@@ -13,6 +14,11 @@ public class PlayerInteraction : MonoBehaviour
         {
             TryMineNearbyOres();
             TryHitEnemy();
+        }
+
+        if (Keyboard.current.eKey.wasPressedThisFrame)
+        {
+            TryOpenChest();
         }
     }
 
@@ -25,12 +31,6 @@ public class PlayerInteraction : MonoBehaviour
             if (ore.IsPlayerInRange())
             {
                 bool mined = ore.MineOre();
-                if (mined)
-                {
-                    goldCount += ore.goldValue;
-                    Debug.Log("You mined " + ore.goldValue + " gold! Total: " + goldCount);
-                }
-
                 break; // Only mine one ore per press
             }
         }
@@ -53,6 +53,25 @@ public class PlayerInteraction : MonoBehaviour
 
                     // Apply damage and knockback
                     baseEnemy.TakeDamage(10, knockbackDirection, knockbackStrength);
+                }
+            }
+        }
+    }
+
+    void TryOpenChest()
+    {
+        // Find all chests within the interaction range
+        Collider2D[] chests = Physics2D.OverlapCircleAll(transform.position, chestInteractionRange);
+
+        foreach (Collider2D chestCollider in chests)
+        {
+            if (chestCollider.CompareTag("Chest"))
+            {
+                Chest chest = chestCollider.GetComponent<Chest>();
+                if (chest != null)
+                {
+                    chest.TryOpenChest();
+                    break;
                 }
             }
         }

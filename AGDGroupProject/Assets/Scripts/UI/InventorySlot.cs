@@ -23,7 +23,7 @@ public class InventorySlot : MonoBehaviour
         currentItem = item;
         icon.sprite = item.icon;
         icon.enabled = true;
-        quantityText.text = item.isStackable && item.quantity > 1 ? "x" + item.quantity.ToString() : "";
+        quantityText.text = item.isStackable && item.quantity > 1 ? item.quantity.ToString() : "";
         button.interactable = true;
     }
 

@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1952223350320284210}
   - component: {fileID: 5916089862875189527}
-  - component: {fileID: 702699851585269522}
   - component: {fileID: 4508100899828608141}
+  - component: {fileID: 4462855853340694709}
   m_Layer: 0
   m_Name: Big Tree
   m_TagString: Untagged
@@ -75,9 +75,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 325238509
+  m_SortingLayer: 2
+  m_SortingOrder: 100
   m_Sprite: {fileID: -1378059970512556902, guid: af83d8870fd6ed743a6cdf43c8e69c8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -89,8 +89,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &702699851585269522
-BoxCollider2D:
+--- !u!114 &4508100899828608141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3556338013441666833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8d120215d894e041b37121d4e22e2c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!70 &4462855853340694709
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -123,27 +135,6 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.15283346, y: -3.4654112}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.6875, y: 7.9375}
-    newSize: {x: 4.6875, y: 7.9375}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1.8787832, y: 1.0066774}
-  m_EdgeRadius: 0
---- !u!114 &4508100899828608141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3556338013441666833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8d120215d894e041b37121d4e22e2c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Offset: {x: -0.0131047405, y: -3.5153217}
+  m_Size: {x: 1.5979464, y: 0.79637444}
+  m_Direction: 1
