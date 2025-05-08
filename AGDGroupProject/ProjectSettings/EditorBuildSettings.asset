@@ -6,14 +6,38 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: d4349a882a8060642afe277419fc9c57
+  - enabled: 1
+    path: Assets/Scenes/Intro_Town_1_1.unity
+    guid: 14fa33ca3432f824f9fbe88664539192
+  - enabled: 1
+    path: Assets/Scenes/Intro_Town_1_2.unity
+    guid: 1103eda58f95d6540b6d48636b306b21
+  - enabled: 1
+    path: Assets/Scenes/ForestPath.unity
+    guid: 959721ef2cf9f4d47a59666ba57e842e
+  - enabled: 1
     path: Assets/Scenes/Overworld1_1.unity
     guid: 42cf6b306a3d9d044909ef513b3e72ff
   - enabled: 1
     path: Assets/Scenes/Dungeon1_1.unity
     guid: e73d9979b4fc33c478b8042c3d8f41be
   - enabled: 1
+    path: Assets/Scenes/Dungeon1_2.unity
+    guid: a70aa7388736bef48aec560ecc155ae8
+  - enabled: 1
+    path: Assets/Scenes/Dungeon1_3.unity
+    guid: 7e299b109ca0f96458012fbe7b85e231
+  - enabled: 1
+    path: Assets/Scenes/Dungeon1_4.unity
+    guid: 19ec3181ba5fa3c409cb8767fc26533f
+  - enabled: 1
     path: Assets/Scenes/Town1_1.unity
     guid: 507f72299bb02b4498bc089c46369a7a
+  - enabled: 0
+    path: Assets/Scenes/Thirsa_Sandbox.unity
+    guid: 104fb20a6962ddd40ad2cb70e1fd5e2a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

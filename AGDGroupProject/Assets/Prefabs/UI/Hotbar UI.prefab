@@ -98,7 +98,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: b4bd5fba311be364ea06d46c9c19da28, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -137,6 +137,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iconImage: {fileID: 1507154701583335709}
   quantityText: {fileID: 3937223671536114663}
+  button: {fileID: 819650778078206016}
+  defaultSprite: {fileID: 21300000, guid: 1c9f7795e33c3124687b84351aa9ee73, type: 3}
+  selectedSprite: {fileID: 21300000, guid: b4bd5fba311be364ea06d46c9c19da28, type: 3}
   itemData: {fileID: 0}
   quantity: 0
 --- !u!1 &1362271624963822167
@@ -237,7 +240,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -249,7 +252,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: b4bd5fba311be364ea06d46c9c19da28, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -276,6 +279,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iconImage: {fileID: 7755075199508575764}
   quantityText: {fileID: 441578241802844269}
+  button: {fileID: 1141967530634841757}
+  defaultSprite: {fileID: 21300000, guid: 1c9f7795e33c3124687b84351aa9ee73, type: 3}
+  selectedSprite: {fileID: 21300000, guid: b4bd5fba311be364ea06d46c9c19da28, type: 3}
   itemData: {fileID: 0}
   quantity: 0
 --- !u!1 &1761155903700547174
@@ -399,8 +405,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: x3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3d75c757bda6ba944be408920850b119, type: 2}
-  m_sharedMaterial: {fileID: -4368666699850544869, guid: 3d75c757bda6ba944be408920850b119, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69a06f84dc5e0f843b03628eb91f296a, type: 2}
+  m_sharedMaterial: {fileID: -7255342867266480846, guid: 69a06f84dc5e0f843b03628eb91f296a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -535,8 +541,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: x3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3d75c757bda6ba944be408920850b119, type: 2}
-  m_sharedMaterial: {fileID: -4368666699850544869, guid: 3d75c757bda6ba944be408920850b119, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69a06f84dc5e0f843b03628eb91f296a, type: 2}
+  m_sharedMaterial: {fileID: -7255342867266480846, guid: 69a06f84dc5e0f843b03628eb91f296a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -671,8 +677,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: x3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3d75c757bda6ba944be408920850b119, type: 2}
-  m_sharedMaterial: {fileID: -4368666699850544869, guid: 3d75c757bda6ba944be408920850b119, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69a06f84dc5e0f843b03628eb91f296a, type: 2}
+  m_sharedMaterial: {fileID: -7255342867266480846, guid: 69a06f84dc5e0f843b03628eb91f296a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1063,7 +1069,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1075,7 +1081,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: b4bd5fba311be364ea06d46c9c19da28, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -1102,6 +1108,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iconImage: {fileID: 2073361295371173918}
   quantityText: {fileID: 7382566871964749179}
+  button: {fileID: 1539649797995909048}
+  defaultSprite: {fileID: 21300000, guid: 1c9f7795e33c3124687b84351aa9ee73, type: 3}
+  selectedSprite: {fileID: 21300000, guid: b4bd5fba311be364ea06d46c9c19da28, type: 3}
   itemData: {fileID: 0}
   quantity: 0
 --- !u!1 &8365119071354466763

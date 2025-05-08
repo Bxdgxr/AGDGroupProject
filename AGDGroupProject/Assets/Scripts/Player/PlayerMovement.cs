@@ -9,18 +9,20 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movementInput;
     private Animator animator;
+    private bool canMove = true;
 
     // Direction booleans
-    private bool isLookingUp = false;
-    private bool isLookingDown = false;
-    private bool isLookingLeft = false;
-    private bool isLookingRight = false;
+    public bool isLookingUp = false;
+    public bool isLookingDown = false;
+    public bool isLookingLeft = false;
+    public bool isLookingRight = false;
 
-    // Movement state booleans
+    // Movement
     private bool isMoving = false;
 
-    // To track which direction was pressed first
-    private string currentDirection = "down"; // Default to down
+    // Track key presses
+    private bool upHeld, downHeld, leftHeld, rightHeld;
+    private string currentDirection = "down"; // default facing
 
     void Awake()
     {
@@ -30,43 +32,33 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        movementInput = Vector2.zero;
-
-        // Get input from keyboard for movement
-        if (Keyboard.current != null)
+        if (!canMove)
         {
-            // Check for horizontal input (Left / Right)
-            if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
-            {
-                movementInput.x = -1;
-                SetDirection("left");
-            }
-            else if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
-            {
-                movementInput.x = 1;
-                SetDirection("right");
-            }
-
-            // Check for vertical input (Up / Down)
-            if (Keyboard.current.wKey.isPressed || Keyboard.current.upArrowKey.isPressed)
-            {
-                movementInput.y = 1;
-                SetDirection("up");
-            }
-            else if (Keyboard.current.sKey.isPressed || Keyboard.current.downArrowKey.isPressed)
-            {
-                movementInput.y = -1;
-                SetDirection("down");
-            }
+            movementInput = Vector2.zero;
+            animator.SetBool("IsMoving", false);
+            return;
         }
 
-        // Normalize the movement input to prevent diagonal speed increase
-        movementInput = movementInput.normalized;
+        movementInput = Vector2.zero;
 
-        // Determine if the player is moving or idle
+        if (Keyboard.current != null)
+        {
+            upHeld = Keyboard.current.wKey.isPressed || Keyboard.current.upArrowKey.isPressed;
+            downHeld = Keyboard.current.sKey.isPressed || Keyboard.current.downArrowKey.isPressed;
+            leftHeld = Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed;
+            rightHeld = Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed;
+
+            if (leftHeld) movementInput.x -= 1;
+            if (rightHeld) movementInput.x += 1;
+            if (upHeld) movementInput.y += 1;
+            if (downHeld) movementInput.y -= 1;
+
+            HandleDirectionSwitch();
+        }
+
+        movementInput = movementInput.normalized;
         isMoving = movementInput != Vector2.zero;
 
-        // Set the booleans in the animator for animation transitions
         animator.SetBool("IsMoving", isMoving);
         animator.SetBool("IsLookingUp", isLookingUp);
         animator.SetBool("IsLookingDown", isLookingDown);
@@ -76,41 +68,65 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Apply movement to the Rigidbody2D
         rb.linearVelocity = movementInput * moveSpeed;
     }
 
-    // Method to set direction and reset others
+    public void SetCanMove(bool value)
+    {
+        canMove = value;
+    }
+
+    private void HandleDirectionSwitch()
+    {
+        switch (currentDirection)
+        {
+            case "up":
+                if (!upHeld) CheckNewDirectionPriority(); break;
+            case "down":
+                if (!downHeld) CheckNewDirectionPriority(); break;
+            case "left":
+                if (!leftHeld) CheckNewDirectionPriority(); break;
+            case "right":
+                if (!rightHeld) CheckNewDirectionPriority(); break;
+        }
+    }
+
+    private void CheckNewDirectionPriority()
+    {
+        if (upHeld) SetDirection("up");
+        else if (downHeld) SetDirection("down");
+        else if (leftHeld) SetDirection("left");
+        else if (rightHeld) SetDirection("right");
+    }
+
     private void SetDirection(string direction)
     {
-        // Only update the direction if it's a new direction
-        if (currentDirection != direction)
+        isLookingUp = isLookingDown = isLookingLeft = isLookingRight = false;
+
+        switch (direction)
         {
-            // Reset all directions
-            isLookingUp = false;
-            isLookingDown = false;
-            isLookingLeft = false;
-            isLookingRight = false;
-
-            // Set the correct direction
-            switch (direction)
-            {
-                case "up":
-                    isLookingUp = true;
-                    break;
-                case "down":
-                    isLookingDown = true;
-                    break;
-                case "left":
-                    isLookingLeft = true;
-                    break;
-                case "right":
-                    isLookingRight = true;
-                    break;
-            }
-
-            // Update the current direction
-            currentDirection = direction;
+            case "up": isLookingUp = true; break;
+            case "down": isLookingDown = true; break;
+            case "left": isLookingLeft = true; break;
+            case "right": isLookingRight = true; break;
         }
+
+        currentDirection = direction;
+    }
+
+    public void TriggerSwingAnimation()
+    {
+        if (animator != null)
+        {
+            animator.SetTrigger("Swing");
+            animator.SetBool("IsSwinging", true);
+            StartCoroutine(ResetSwingFlag());
+        }
+    }
+
+    private System.Collections.IEnumerator ResetSwingFlag()
+    {
+        yield return new WaitForSeconds(0.4f); // lengte van swing-animatie
+        animator.SetBool("IsSwinging", false);
     }
 }

@@ -7,7 +7,7 @@ public class InventoryToggle : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(toggleKey))
+        if (Input.GetKeyDown(toggleKey)&& !DialogueRumpleEnd.IsInputActive)
         {
             inventoryUI.SetActive(!inventoryUI.activeSelf);
         }

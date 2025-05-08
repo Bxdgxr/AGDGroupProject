@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: NoSword_Goblin
+  m_Controller: {fileID: 9100000, guid: 884870c285cc3114c83047018f82e3cb, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 92c1cb9643bf0b44f93e912887e29c11, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4a802485a0422b8448483de8a8944285, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b6972c7802dac3245a0b2cdf56ffe489, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: be31593243f90c542a7952b794c89ffa, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 69f375e6a30ae814e90e3c38961fe66b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 059f80eaccffeb24e94e1a74af412121, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 7380f7569bd334f4dbf164a120e26424, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 408631855e14e9d42bab96bba22af1a7, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 820c29ce77eed814681b25765548392d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ce92254051f353f45b8cde4b6c61747f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3f704810b15df31468adc8d79625a2c8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e4f9f6df012fba94e9b0bc6ff90053c2, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1c243fa8d9e0a5e429d1793458d20cb8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 181538ee5e77bfb45b1c90035004e694, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d60782141fb63284392ef5049b231f0a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4fd1d861b63677840896490e0f08528c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: af1dbf7e8314bae448c8f0818a354ffa, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b6557cedfae68a240a4b01137b7ff950, type: 2}

@@ -1,25 +1,79 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class PlayerInteraction : MonoBehaviour
 {
+    public HotbarManager hotbarManager;
+
     public int goldCount = 0;
-    public float attackRange = 1f;  // The range for hitting the enemy
-    public float knockbackStrength = 1f;  // Knockback strength when hitting the enemy
-    public float chestInteractionRange = 2f; // Range for opening chest
+    public float attackRange = 1f;
+    public float knockbackStrength = 1f;
+    public float chestInteractionRange = 2f;
+
+    private PlayerHealth playerHealth;
+    private Animator animator;
+    private PlayerMovement playerMovement;
+
+    private bool isSwinging = false;
+
+    private void Start()
+    {
+        if (hotbarManager == null)
+        {
+            hotbarManager = FindAnyObjectByType<HotbarManager>();
+        }
+
+        playerHealth = GetComponent<PlayerHealth>();
+        animator = GetComponent<Animator>();
+        playerMovement = GetComponent<PlayerMovement>();
+
+        if (playerHealth == null) Debug.LogError("PlayerHealth component not found!");
+        if (animator == null) Debug.LogError("Animator not found!");
+        if (playerMovement == null) Debug.LogError("PlayerMovement script not found!");
+    }
 
     private void Update()
     {
+        if (isSwinging) return; // Blokkeer andere acties tijdens zwaai
+
         if (Keyboard.current.fKey.wasPressedThisFrame)
         {
-            TryMineNearbyOres();
-            TryHitEnemy();
+            InventoryItemData selectedItem = hotbarManager.GetSelectedItem();
+
+            if (selectedItem != null && selectedItem.category == ItemCategory.Sword)
+            {
+                StartCoroutine(PlaySwingAnimation());
+                TryHitEnemy();
+            }
+            else if (selectedItem != null && selectedItem.category == ItemCategory.Pickaxe)
+            {
+                TryMineNearbyOres();
+            }
+            else if (selectedItem != null && selectedItem.category == ItemCategory.Potion)
+            {
+                UsePotion();
+            }
         }
 
         if (Keyboard.current.eKey.wasPressedThisFrame)
         {
             TryOpenChest();
         }
+    }
+
+    IEnumerator PlaySwingAnimation()
+    {
+        isSwinging = true;
+        playerMovement.SetCanMove(false); // Beweeg de speler tijdelijk niet
+        animator.SetBool("IsSwinging", true);
+
+        // Sla animatie duurt ~0.4 seconden (pas dit aan aan je clip)
+        yield return new WaitForSeconds(0.5f);
+
+        animator.SetBool("IsSwinging", false);
+        playerMovement.SetCanMove(true);
+        isSwinging = false;
     }
 
     void TryMineNearbyOres()
@@ -31,27 +85,23 @@ public class PlayerInteraction : MonoBehaviour
             if (ore.IsPlayerInRange())
             {
                 bool mined = ore.MineOre();
-                break; // Only mine one ore per press
+                break;
             }
         }
     }
 
     void TryHitEnemy()
     {
-        // Find all enemies near the player
         Collider2D[] enemies = Physics2D.OverlapCircleAll(transform.position, attackRange);
 
         foreach (Collider2D enemy in enemies)
         {
-            if (enemy.CompareTag("Enemy") && enemy.gameObject != gameObject) // Make sure we don't hit ourselves
+            if (enemy.CompareTag("Enemy") && enemy.gameObject != gameObject)
             {
                 BaseEnemy baseEnemy = enemy.GetComponent<BaseEnemy>();
                 if (baseEnemy != null)
                 {
-                    // Calculate knockback direction (opposite of the player’s position)
                     Vector2 knockbackDirection = (enemy.transform.position - transform.position).normalized;
-
-                    // Apply damage and knockback
                     baseEnemy.TakeDamage(10, knockbackDirection, knockbackStrength);
                 }
             }
@@ -60,7 +110,6 @@ public class PlayerInteraction : MonoBehaviour
 
     void TryOpenChest()
     {
-        // Find all chests within the interaction range
         Collider2D[] chests = Physics2D.OverlapCircleAll(transform.position, chestInteractionRange);
 
         foreach (Collider2D chestCollider in chests)
@@ -77,4 +126,20 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
+    void UsePotion()
+    {
+        HotbarSlotUI slot = hotbarManager.GetSelectedSlot();
+
+        if (slot != null && slot.quantity > 0)
+        {
+            Debug.Log("Used potion!");
+            int healAmount = Mathf.RoundToInt(playerHealth.maxHealth * 0.3f);
+            playerHealth.Heal(healAmount);
+
+            slot.UpdateQuantity(slot.quantity - 1);
+
+            if (slot.quantity == 0)
+                slot.Clear();
+        }
+    }
 }

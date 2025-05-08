@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4906175560449156451}
   - component: {fileID: 7446118366830827138}
   - component: {fileID: 875831982398178121}
+  - component: {fileID: 5041581129840958353}
   m_Layer: 0
   m_Name: Small Gold Ore
   m_TagString: Untagged
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 325238509
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 90
   m_Sprite: {fileID: -3988769855312385993, guid: 967dd325059cb1144b52e3a661e48f8c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -139,7 +140,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.000000059604645, y: -0.1319596}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -149,7 +150,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.59375, y: 0.59375}
+  m_Size: {x: 0.52644193, y: 0.29440537}
   m_EdgeRadius: 0
 --- !u!114 &875831982398178121
 MonoBehaviour:
@@ -166,4 +167,17 @@ MonoBehaviour:
   inventoryManager: {fileID: 0}
   itemPopUpManager: {fileID: 0}
   itemData: {fileID: 11400000, guid: 2d15acf313649744591d318df5392126, type: 2}
+  hotbarManager: {fileID: 0}
   quantity: 2
+--- !u!114 &5041581129840958353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9126646899161700431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8d120215d894e041b37121d4e22e2c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

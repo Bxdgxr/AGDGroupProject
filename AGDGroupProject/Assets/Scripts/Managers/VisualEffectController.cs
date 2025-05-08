@@ -18,7 +18,12 @@ public class VisualEffectsController : MonoBehaviour
 
     private void Start()
     {
-        // Check if the volume and effects are available
+        // Load saved visual effects
+        if (VisualEffectsData.Instance != null)
+        {
+            VisualEffectsData.Instance.LoadVisualEffects(out greyscaleActive, out vignetteActive, out distortionActive);
+        }
+
         if (volume != null && volume.profile != null)
         {
             if (volume.profile.TryGet(out colorAdjustments)) { }
@@ -30,25 +35,27 @@ public class VisualEffectsController : MonoBehaviour
             Debug.LogError("Volume or Volume Profile is missing!");
         }
 
-        // Set default values for effects
-        if (colorAdjustments != null) colorAdjustments.saturation.value = 0f;
-        if (vignette != null) vignette.intensity.value = 0f;
-        if (lensDistortion != null) lensDistortion.intensity.value = 0f;
+        if (colorAdjustments != null) colorAdjustments.saturation.value = greyscaleActive ? -90f : 0f;
+        if (vignette != null) vignette.intensity.value = vignetteActive ? 0.75f : 0f;
+        if (lensDistortion != null) lensDistortion.intensity.value = distortionActive ? -0.45f : 0f;
     }
 
     private void Update()
     {
-        // Toggle effects based on input
         if (Input.GetKeyDown(KeyCode.G))
-            greyscaleActive = !greyscaleActive;
+            ToggleGreyscale();
 
         if (Input.GetKeyDown(KeyCode.H))
-            vignetteActive = !vignetteActive;
+            ToggleVignette();
 
         if (Input.GetKeyDown(KeyCode.J))
-            distortionActive = !distortionActive;
+            ToggleDistortion();
 
-        // Smooth transition for each effect
+        UpdateEffects();
+    }
+
+    void UpdateEffects()
+    {
         if (colorAdjustments != null)
         {
             float targetSaturation = greyscaleActive ? -90f : 0f;
@@ -65,6 +72,32 @@ public class VisualEffectsController : MonoBehaviour
         {
             float targetDistortion = distortionActive ? -0.45f : 0f;
             lensDistortion.intensity.value = Mathf.Lerp(lensDistortion.intensity.value, targetDistortion, Time.deltaTime * fadeSpeed);
+        }
+    }
+
+    public void ToggleGreyscale()
+    {
+        greyscaleActive = !greyscaleActive;
+        SaveVisualEffects();
+    }
+
+    public void ToggleVignette()
+    {
+        vignetteActive = !vignetteActive;
+        SaveVisualEffects();
+    }
+
+    public void ToggleDistortion()
+    {
+        distortionActive = !distortionActive;
+        SaveVisualEffects();
+    }
+
+    void SaveVisualEffects()
+    {
+        if (VisualEffectsData.Instance != null)
+        {
+            VisualEffectsData.Instance.SaveVisualEffects(greyscaleActive, vignetteActive, distortionActive);
         }
     }
 }

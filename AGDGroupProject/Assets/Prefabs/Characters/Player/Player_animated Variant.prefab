@@ -18,11 +18,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3635290493348221524, guid: bdd2f9f67b645234a8c8eedb83336c47, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.81
+      value: -2.8317585
       objectReference: {fileID: 0}
     - target: {fileID: 3635290493348221524, guid: bdd2f9f67b645234a8c8eedb83336c47, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.472
+      value: -2.6728666
       objectReference: {fileID: 0}
     - target: {fileID: 3635290493348221524, guid: bdd2f9f67b645234a8c8eedb83336c47, type: 3}
       propertyPath: m_LocalPosition.z
@@ -72,9 +72,17 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4084145279851555616, guid: bdd2f9f67b645234a8c8eedb83336c47, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4084145279851555616, guid: bdd2f9f67b645234a8c8eedb83336c47, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 2071570635
+      objectReference: {fileID: 0}
     - target: {fileID: 7356121531737372181, guid: bdd2f9f67b645234a8c8eedb83336c47, type: 3}
       propertyPath: m_Name
-      value: Player_animated
+      value: Player_animated Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8764513593721194869, guid: bdd2f9f67b645234a8c8eedb83336c47, type: 3}
       propertyPath: m_Size.x
@@ -82,7 +90,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8764513593721194869, guid: bdd2f9f67b645234a8c8eedb83336c47, type: 3}
       propertyPath: m_Size.y
-      value: 0.21415424
+      value: 0.51956844
       objectReference: {fileID: 0}
     - target: {fileID: 8764513593721194869, guid: bdd2f9f67b645234a8c8eedb83336c47, type: 3}
       propertyPath: m_Offset.x
@@ -90,7 +98,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8764513593721194869, guid: bdd2f9f67b645234a8c8eedb83336c47, type: 3}
       propertyPath: m_Offset.y
-      value: -0.70353436
+      value: 0.27394414
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764513593721194869, guid: bdd2f9f67b645234a8c8eedb83336c47, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8764513593721194869, guid: bdd2f9f67b645234a8c8eedb83336c47, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +15,14 @@ public class HotbarManager : MonoBehaviour
     private HotbarSlotUI[] slotArray;
     private int selectedIndex = -1;
 
+    // Expose slots for save/load
+    public List<HotbarSlotUI> hotbarSlots => new()
+    {
+        swordSlot,
+        pickaxeSlot,
+        potionSlot
+    };
+
     void Start()
     {
         slotArray = new[] { swordSlot, pickaxeSlot, potionSlot };
@@ -23,9 +32,8 @@ public class HotbarManager : MonoBehaviour
         pickaxeSlot.GetComponent<Button>().onClick.AddListener(() => SelectSlot(1));
         potionSlot.GetComponent<Button>().onClick.AddListener(() => SelectSlot(2));
 
-        swordSlot.Clear();
-        pickaxeSlot.Clear();
-        potionSlot.Clear();
+        // Load hotbar from persistent data
+        InventoryData.Instance?.LoadHotbar(hotbarSlots);
     }
 
     void Update()
@@ -37,35 +45,67 @@ public class HotbarManager : MonoBehaviour
 
     public void AssignItem(InventoryItemData data, int quantity)
     {
-switch (data.category)
+        switch (data.category)
+        {
+            case ItemCategory.Sword:
+                swordSlot.SetSlot(data, quantity);
+                break;
+
+            case ItemCategory.Pickaxe:
+                pickaxeSlot.SetSlot(data, quantity);
+                break;
+
+            case ItemCategory.Potion:
+                if (potionSlot.HasItem())
+                    potionSlot.UpdateQuantity(potionSlot.quantity + quantity);
+                else
+                    potionSlot.SetSlot(data, quantity);
+                break;
+
+            default:
+                Debug.Log($"Item {data.itemName} has no hotbar slot.");
+                break;
+        }
+    }
+
+public void SelectSlot(int index)
 {
-    case ItemCategory.Sword:
-        swordSlot.SetSlot(data, quantity);
-        break;
+    if (!slotArray[index].HasItem()) return;
 
-    case ItemCategory.Pickaxe:
-        pickaxeSlot.SetSlot(data, quantity);
-        break;
+    selectedIndex = index;
 
-    case ItemCategory.Potion:
-        if (potionSlot.HasItem())
-            potionSlot.UpdateQuantity(potionSlot.quantity + quantity);
-        else
-            potionSlot.SetSlot(data, quantity);
-        break;
+    for (int i = 0; i < slotArray.Length; i++)
+    {
+        slotArray[i].SetSelected(i == selectedIndex);
+    }
 
-    default:
-        Debug.Log($"Item {data.itemName} has no hotbar slot.");
-        break;
+    Debug.Log("Selected hotbar slot: " + (index + 1) + " — " + slotArray[index].itemData.itemName);
 }
 
-    }
 
-    public void SelectSlot(int index)
+    public InventoryItemData GetSelectedItem()
     {
-        if (!slotArray[index].HasItem()) return;
-
-        selectedIndex = index;
-        Debug.Log("Selected hotbar slot: " + (index + 1) + " — " + slotArray[index].itemData.itemName);
+        if (selectedIndex >= 0 && slotArray[selectedIndex].HasItem())
+            return slotArray[selectedIndex].itemData;
+        return null;
     }
+
+    public HotbarSlotUI GetSelectedSlot()
+    {
+        if (selectedIndex >= 0 && slotArray[selectedIndex].HasItem())
+            return slotArray[selectedIndex];
+        return null;
+    }
+
+    public void SaveHotbarState()
+    {
+        InventoryData.Instance?.SaveHotbar(hotbarSlots);
+    }
+    public void DeselectAllSlots()
+{
+    selectedIndex = -1;
+    foreach (var slot in slotArray)
+        slot.SetSelected(false);
+}
+
 }

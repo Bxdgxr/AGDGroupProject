@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Pickaxe
   description: This basic Pickaxe should do fine with collecting gold.
-  icon: {fileID: 0}
+  icon: {fileID: 5807921338739458136, guid: 1d7454976ca7bca499cece62a65e7283, type: 3}
   isStackable: 0
   category: 2

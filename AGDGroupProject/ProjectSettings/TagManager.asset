@@ -46,11 +46,23 @@ TagManager:
   - name: AnimatedGroundLayer
     uniqueID: 2379959153
     locked: 0
-  - name: NonGround
-    uniqueID: 325238509
+  - name: Ground
+    uniqueID: 3263130191
     locked: 0
-  - name: ShadowOverlay
-    uniqueID: 3487741397
+  - name: WalkInFront
+    uniqueID: 820247291
+    locked: 0
+  - name: YSortingLayer
+    uniqueID: 2071570635
+    locked: 0
+  - name: WalkBehind
+    uniqueID: 2846507505
+    locked: 0
+  - name: Decor
+    uniqueID: 1778477647
+    locked: 0
+  - name: UI
+    uniqueID: 2440069339
     locked: 0
   m_RenderingLayers:
   - Default

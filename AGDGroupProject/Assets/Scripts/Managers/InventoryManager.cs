@@ -12,13 +12,15 @@ public class InventoryManager : MonoBehaviour
 
     private InventorySlot selectedSlot;
 
-    public void Start()
-    {
-        foreach (var slot in slots)
-            slot.Init(this);
+void Start()
+{
+    foreach (var slot in slots)
+        slot.Init(this);
 
-        ShowItemDetails(null);
-    }
+    InventoryData.Instance?.LoadInventory(slots);
+
+    ShowItemDetails(null);
+}
 
     public void AddItem(InventoryItem newItem)
     {

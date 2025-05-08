@@ -3,7 +3,6 @@ using TMPro;
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.Events;
-using System.Collections.Generic;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -15,21 +14,28 @@ public class DialogueManager : MonoBehaviour
     public Image playerPortrait;
     public Image npcPortrait;
     public float textSpeed = 0.03f;
+    public GameObject continuePromptText;
 
     [Header("Choices")]
-    public GameObject choiceContainer; // Panel that holds buttons
-    public GameObject choiceButtonPrefab; // Prefab with TMP_Text & Button
+    public GameObject choiceContainer;
+    public GameObject choiceButtonPrefab;
+
+    [Header("Player Control")]
+    public PlayerMovement playerMovement; // ✅ Drag your player script here in Inspector
 
     private DialogueTrigger currentTrigger;
     private int currentIndex;
     private Coroutine typingCoroutine;
     private UnityEvent pendingOnLineEnd;
 
+    private bool canContinue = false;
+    private bool waitingForEvent = false;
+
     public bool IsDialogueActive => dialogueUI.activeSelf;
 
     void Update()
     {
-        if (dialogueUI.activeSelf && Input.GetKeyDown(KeyCode.E) && typingCoroutine == null && choiceContainer.activeSelf == false)
+        if (dialogueUI.activeSelf && Input.GetKeyDown(KeyCode.E) && typingCoroutine == null && canContinue && !choiceContainer.activeSelf && !DialogueRumpleEnd.IsInputActive)
         {
             AdvanceDialogue();
         }
@@ -43,8 +49,25 @@ public class DialogueManager : MonoBehaviour
         choiceContainer.SetActive(false);
         ClearChoices();
 
-        playerPortrait.gameObject.SetActive(false);
-        npcPortrait.gameObject.SetActive(false);
+        canContinue = false;
+        waitingForEvent = false;
+        if (continuePromptText != null)
+            continuePromptText.SetActive(false);
+
+if (playerMovement != null)
+{
+    playerMovement.enabled = false; // Freeze input
+
+    // Stop Rigidbody movement
+    Rigidbody2D rb = playerMovement.GetComponent<Rigidbody2D>();
+    if (rb != null)
+        rb.linearVelocity = Vector2.zero;
+
+    // Stop animation
+    Animator anim = playerMovement.GetComponent<Animator>();
+    if (anim != null)
+        anim.SetBool("IsMoving", false);
+}
 
         AdvanceDialogue();
     }
@@ -59,6 +82,11 @@ public class DialogueManager : MonoBehaviour
             pendingOnLineEnd = null;
         }
 
+        canContinue = false;
+        waitingForEvent = false;
+        if (continuePromptText != null)
+            continuePromptText.SetActive(false);
+
         if (currentIndex >= currentTrigger.lines.Length)
         {
             EndDialogue();
@@ -70,10 +98,9 @@ public class DialogueManager : MonoBehaviour
 
         if (speaker.isPlayer)
         {
-            playerNameText.text = speaker.characterName;
+            playerNameText.text = PlayerProfile.Instance != null ? PlayerProfile.Instance.playerName : speaker.characterName;
             playerPortrait.sprite = speaker.portrait;
             playerPortrait.gameObject.SetActive(true);
-
             npcNameText.text = "";
             npcPortrait.gameObject.SetActive(false);
         }
@@ -82,30 +109,24 @@ public class DialogueManager : MonoBehaviour
             npcNameText.text = speaker.characterName;
             npcPortrait.sprite = speaker.portrait;
             npcPortrait.gameObject.SetActive(true);
-
             playerNameText.text = "";
             playerPortrait.gameObject.SetActive(false);
         }
 
         pendingOnLineEnd = line.onLineEnd;
-        typingCoroutine = StartCoroutine(TypeSentence(line.sentence));
+        typingCoroutine = StartCoroutine(TypeSentence(line.sentence, line.waitForEventToFinish));
 
-        // Choices are shown AFTER the sentence types out, in coroutine
-        if (line.choices != null && line.choices.Length > 0)
-        {
-            currentIndex++; // Still increase index
-        }
-        else
-        {
-            currentIndex++;
-        }
+        currentIndex++;
     }
 
-    IEnumerator TypeSentence(string sentence)
+    IEnumerator TypeSentence(string sentence, bool waitForEvent)
     {
         dialogueText.text = "";
 
-        foreach (char letter in sentence.ToCharArray())
+        // Replace {player} with player's chosen name
+        string processed = sentence.Replace("{player}", PlayerProfile.Instance != null ? PlayerProfile.Instance.playerName : "???");
+
+        foreach (char letter in processed.ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(textSpeed);
@@ -116,10 +137,37 @@ public class DialogueManager : MonoBehaviour
         pendingOnLineEnd = null;
 
         var line = currentTrigger.lines[currentIndex - 1];
+
         if (line.choices != null && line.choices.Length > 0)
         {
             ShowChoices(line.choices);
         }
+        else if (waitForEvent)
+        {
+            waitingForEvent = true; // Wait until cutscene/event finishes
+        }
+        else
+        {
+            StartCoroutine(EnableContinuePrompt());
+        }
+    }
+
+    public void NotifyLineFinished()
+    {
+        if (waitingForEvent)
+        {
+            waitingForEvent = false;
+            StartCoroutine(EnableContinuePrompt());
+        }
+    }
+
+    private IEnumerator EnableContinuePrompt()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        canContinue = true;
+        if (continuePromptText != null)
+            continuePromptText.SetActive(true);
     }
 
     void ShowChoices(DialogueChoice[] choices)
@@ -169,5 +217,13 @@ public class DialogueManager : MonoBehaviour
         pendingOnLineEnd = null;
         typingCoroutine = null;
         ClearChoices();
+
+        canContinue = false;
+        waitingForEvent = false;
+        if (continuePromptText != null)
+            continuePromptText.SetActive(false);
+
+        if (playerMovement != null)
+            playerMovement.enabled = true; // ✅ Unfreeze player
     }
 }

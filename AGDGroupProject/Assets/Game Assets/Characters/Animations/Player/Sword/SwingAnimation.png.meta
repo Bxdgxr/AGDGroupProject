@@ -1,0 +1,864 @@
+fileFormatVersion: 2
+guid: 0d3a43ecebb46894ea6c04fffb20103c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -574128092676464210
+    second: SwingAnimation_0
+  - first:
+      213: -5331473237802335157
+    second: SwingAnimation_1
+  - first:
+      213: -668860436059963816
+    second: SwingAnimation_2
+  - first:
+      213: -1683590493294258236
+    second: SwingAnimation_3
+  - first:
+      213: -3712694077257283775
+    second: SwingAnimation_4
+  - first:
+      213: 7839228169060936706
+    second: SwingAnimation_5
+  - first:
+      213: -2575053457368553583
+    second: SwingAnimation_6
+  - first:
+      213: 397941638522498881
+    second: SwingAnimation_7
+  - first:
+      213: 6916609571104468443
+    second: SwingAnimation_8
+  - first:
+      213: -7718342750590196239
+    second: SwingAnimation_9
+  - first:
+      213: 6954001107400490484
+    second: SwingAnimation_10
+  - first:
+      213: -6602406296559190590
+    second: SwingAnimation_11
+  - first:
+      213: 4915929104082193926
+    second: SwingAnimation_12
+  - first:
+      213: -1318293058846399315
+    second: SwingAnimation_13
+  - first:
+      213: 2251916572451430628
+    second: SwingAnimation_14
+  - first:
+      213: 6120367873798396677
+    second: SwingAnimation_15
+  - first:
+      213: -3475608159286241604
+    second: SwingAnimation_16
+  - first:
+      213: 4786599198440425813
+    second: SwingAnimation_17
+  - first:
+      213: -2315939246099482160
+    second: SwingAnimation_18
+  - first:
+      213: 4768421650962929998
+    second: SwingAnimation_19
+  - first:
+      213: 4682572318792759331
+    second: SwingAnimation_20
+  - first:
+      213: 6352627923946275505
+    second: SwingAnimation_21
+  - first:
+      213: -6007610757882700481
+    second: SwingAnimation_22
+  - first:
+      213: 5948276082208411932
+    second: SwingAnimation_23
+  - first:
+      213: -3815293072230490308
+    second: SwingAnimation_24
+  - first:
+      213: -7079919927410361165
+    second: SwingAnimation_25
+  - first:
+      213: 6690455536706175908
+    second: SwingAnimation_26
+  - first:
+      213: 3279083610666833397
+    second: SwingAnimation_27
+  - first:
+      213: 5069786794725649224
+    second: SwingAnimation_28
+  - first:
+      213: 8634430753234423234
+    second: SwingAnimation_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 85
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SwingAnimation_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 756
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.48660237, y: 0.50693905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d075bccb1b467f4479f3953b46b19ac2
+      internalID: 769041031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 756
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.5193128, y: 0.5009527}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52aeb9a416b6ce945962506b7eb1cc97
+      internalID: 1831050998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_2
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 756
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.5978689, y: 0.45701593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6deca0ecf0b1f69449ea8707e705378d
+      internalID: -1687798773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_3
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 756
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.59954554, y: 0.47485036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ba7bbeff9baa543bdbe3490b91102a
+      internalID: 1755192013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_4
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 756
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.6226107, y: 0.5034328}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5a3d2ca2855a341a85eabb512edb2f
+      internalID: 1425164276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_5
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 756
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.5914058, y: 0.5154579}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 741ad80bcdfef25408636be36d74166e
+      internalID: 1817950217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_6
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 756
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.52984667, y: 0.49613485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb35f545cf40764097e0ef2b16c8e80
+      internalID: -96027168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 505
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.48797616, y: 0.42410874}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee23cc9fb63803e45a1333b053df3d2a
+      internalID: 206075257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 505
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.5194992, y: 0.38818723}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717d142791ae1fa4e958be34f0a75dfa
+      internalID: 666391691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_9
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 505
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.53402734, y: 0.40759376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82514c2fcb1f181439bf98b5aedff6f8
+      internalID: -1877158879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_10
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 505
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.49999976, y: 0.4148331}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a0303a27a2d3e43933e157e046ca35
+      internalID: 1321453698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_11
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 505
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.6264709, y: 0.545033}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47406d83d4e6e97479c93ed6081ec8b7
+      internalID: -294132454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_12
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 505
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.6612234, y: 0.5180545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ceb681db59e33d49b212b3419502285
+      internalID: 1197403573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_13
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 505
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.6317463, y: 0.5621243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed7e4e690289c24eba63437c9ae4a54
+      internalID: -1393603213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 254
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.46847707, y: 0.40455243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6985d0cb54851e43806e8f8af0e08fb
+      internalID: -1618746270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_15
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 254
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.49878752, y: 0.3945051}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c4759ef8fb5254b8dcf54457295454
+      internalID: 997271996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_16
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 254
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.5497129, y: 0.38127494}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217bce19a4930bf47baa7d2b1e5bac19
+      internalID: 519824074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_17
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 254
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.61412257, y: 0.3996965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96aac56e7a754ca4ea28ffea3649f30f
+      internalID: 448981111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_18
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 254
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.64081466, y: 0.40513763}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb40f7dc3b5d1f488050a7e72231147
+      internalID: 1980677557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_19
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 254
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.61033654, y: 0.37962773}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7903a4522799acb44bd5e3b53a68cf95
+      internalID: 787106014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_20
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 254
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.57457227, y: 0.39109433}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9d14c9544d05340967c918b3abdd44
+      internalID: -1600821372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.53152287, y: 0.33422256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa738c2c1e6b8d143970a7a71ca7ec4f
+      internalID: -682320588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_22
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 3
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.5387974, y: 0.35431668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b80dad790c5c1524e82699c6a8561464
+      internalID: 1221105571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_23
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 3
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.58153874, y: 0.34197333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ce063b4d086b84da4f331fa6ed8f7a
+      internalID: 616525922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_24
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 3
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.539944, y: 0.3537054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b8efac82eb34744ab474b7493e2d08
+      internalID: 1724138132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_25
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 3
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.60213107, y: 0.36695704}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9782f3eea32c8e146a4d32b7149f7835
+      internalID: -1499675536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_26
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 3
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.6308969, y: 0.30060312}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b145b6941f3b64141b0b7d27feccb474
+      internalID: 17314772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwingAnimation_27
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 3
+        width: 260
+        height: 251
+      alignment: 9
+      pivot: {x: 0.52227265, y: 0.33685574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4837903d360e1fc46b22e118179b33a6
+      internalID: -1523036728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bf074e1687d60b04b85a8ed171df4617
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SwingAnimation_0: 769041031
+      SwingAnimation_1: 1831050998
+      SwingAnimation_10: 1321453698
+      SwingAnimation_11: -294132454
+      SwingAnimation_12: 1197403573
+      SwingAnimation_13: -1393603213
+      SwingAnimation_14: -1618746270
+      SwingAnimation_15: 997271996
+      SwingAnimation_16: 519824074
+      SwingAnimation_17: 448981111
+      SwingAnimation_18: 1980677557
+      SwingAnimation_19: 787106014
+      SwingAnimation_2: -1687798773
+      SwingAnimation_20: -1600821372
+      SwingAnimation_21: -682320588
+      SwingAnimation_22: 1221105571
+      SwingAnimation_23: 616525922
+      SwingAnimation_24: 1724138132
+      SwingAnimation_25: -1499675536
+      SwingAnimation_26: 17314772
+      SwingAnimation_27: -1523036728
+      SwingAnimation_3: 1755192013
+      SwingAnimation_4: 1425164276
+      SwingAnimation_5: 1817950217
+      SwingAnimation_6: -96027168
+      SwingAnimation_7: 206075257
+      SwingAnimation_8: 666391691
+      SwingAnimation_9: -1877158879
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

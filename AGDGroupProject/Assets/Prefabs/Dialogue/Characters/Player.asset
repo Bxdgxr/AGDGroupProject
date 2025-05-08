@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Player
   m_EditorClassIdentifier: 
   characterName: Player
-  portrait: {fileID: 0}
+  portrait: {fileID: -9116524295972960539, guid: e17451376be64f54ca5aee42f536c647, type: 3}
   isPlayer: 1

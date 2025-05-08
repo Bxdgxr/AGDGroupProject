@@ -6,9 +6,21 @@ public class HotbarSlotUI : MonoBehaviour
 {
     public Image iconImage;
     public TMP_Text quantityText;
+    public Button button;
+
+    [Header("Selection Sprites")]
+    public Sprite defaultSprite;
+    public Sprite selectedSprite;
+
+    private Image backgroundImage;
 
     [HideInInspector] public InventoryItemData itemData;
     [HideInInspector] public int quantity;
+
+    private void Awake()
+    {
+        backgroundImage = GetComponent<Image>();
+    }
 
     public void SetSlot(InventoryItemData data, int amount)
     {
@@ -18,11 +30,8 @@ public class HotbarSlotUI : MonoBehaviour
         iconImage.sprite = data.icon;
         iconImage.enabled = true;
 
-        if (data.isStackable && quantity > 1)
-            quantityText.text = quantity.ToString();
-        else
-            quantityText.text = "";
-
+        quantityText.text = (data.isStackable && quantity > 1) ? quantity.ToString() : "";
+        button.interactable = true;
         gameObject.SetActive(true);
     }
 
@@ -38,7 +47,17 @@ public class HotbarSlotUI : MonoBehaviour
         quantity = 0;
         iconImage.enabled = false;
         quantityText.text = "";
+        button.interactable = false;
+        SetSelected(false);
     }
 
     public bool HasItem() => itemData != null;
+
+    public void SetSelected(bool isSelected)
+    {
+        if (backgroundImage != null)
+        {
+            backgroundImage.sprite = isSelected ? selectedSprite : defaultSprite;
+        }
+    }
 }

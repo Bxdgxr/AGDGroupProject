@@ -11,8 +11,8 @@ public class DialogueStarter : MonoBehaviour
     [Header("Trigger Settings")]
     public bool triggerOnEnter = true;
     public bool requireInteraction = false;
-
-    private bool isPlayerInRange = false;
+[Header("Linked Triggers")]
+    public DialogueStarter[] linkedTriggers;    private bool isPlayerInRange = false;
     private bool hasPlayedFirstTime = false;
 
     void OnTriggerEnter2D(Collider2D other)
@@ -53,6 +53,7 @@ public class DialogueStarter : MonoBehaviour
         {
             dialogueManager.StartDialogue(firstTimeDialogue);
             hasPlayedFirstTime = true;
+            DeactivateLinkedTriggers();
         }
         else if (repeatDialogue != null)
         {
@@ -64,5 +65,15 @@ public class DialogueStarter : MonoBehaviour
     public void ResetDialogue()
     {
         hasPlayedFirstTime = false;
+    }
+    void DeactivateLinkedTriggers()
+    {
+        foreach (var trigger in linkedTriggers)
+        {
+            if (trigger != null && trigger != this)
+            {
+                trigger.gameObject.SetActive(false);
+            }
+        }
     }
 }

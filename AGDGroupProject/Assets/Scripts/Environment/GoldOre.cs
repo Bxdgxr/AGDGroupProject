@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class GoldOre : MonoBehaviour
 {
@@ -6,9 +7,8 @@ public class GoldOre : MonoBehaviour
     public int goldValue = 1;
     public int hitPoints = 1;
 
-    public GiveItem giveItem; // Reference to the GiveItem script
+    public GiveItem giveItem;
 
-    // Now private and only changeable in code
     private float interactionRange = 1.5f;
     private float invincibilityTime = 0.5f;
 
@@ -17,10 +17,19 @@ public class GoldOre : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Transform player;
 
+    // Statische lijst met posities van gemijnde ores tijdens deze speelsessie
+    private static HashSet<Vector3> minedPositions = new HashSet<Vector3>();
+
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player")?.transform;
+
+        // Als deze ore al gemijnd is (in deze sessie), verwijder hem
+        if (minedPositions.Contains(transform.position))
+        {
+            Destroy(gameObject);
+        }
     }
 
     public bool IsPlayerInRange()
@@ -41,20 +50,24 @@ public class GoldOre : MonoBehaviour
             Debug.Log("Ore broken!");
             if (giveItem != null)
             {
-                giveItem.GiveToPlayer(); // Call the method to give gold
+                giveItem.GiveToPlayer();
             }
             else
             {
                 Debug.LogWarning("GiveItem script not assigned to GoldOre!");
             }
+
+            // Voeg deze positie toe aan de lijst van gemijnde ores
+            minedPositions.Add(transform.position);
+
             Destroy(gameObject);
-            return true; // Mined successfully
+            return true;
         }
         else
         {
             Debug.Log("Ore hit! " + hitPoints + " hits left.");
             StartCoroutine(TriggerInvincibility());
-            return false; // Not mined yet
+            return false;
         }
     }
 

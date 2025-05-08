@@ -1,7 +1,9 @@
 using UnityEngine;
+using System.Collections;
 
 public class SlimeEnemy : BaseEnemy
 {
+    [Header("Movement Settings")]
     [SerializeField] private float detectionRange = 5f;
     [SerializeField] private float hopForce = 3f;
     [SerializeField] private float hopCooldown = 1.5f;
@@ -10,6 +12,9 @@ public class SlimeEnemy : BaseEnemy
     private float hopCooldownTimer;
     private float hopMoveTimer;
     private bool isHopping = false;
+
+    [Header("Animation")]
+    [SerializeField] private Animator animator;
 
     protected override void Update()
     {
@@ -30,6 +35,10 @@ public class SlimeEnemy : BaseEnemy
                 hopCooldownTimer = hopCooldown;
                 hopMoveTimer = hopDuration;
                 isHopping = true;
+
+                // Animation: hopping
+                animator.SetBool("isJumping", true);
+                animator.SetBool("isIdle", false);
             }
         }
 
@@ -40,7 +49,41 @@ public class SlimeEnemy : BaseEnemy
             {
                 rb.linearVelocity = Vector2.zero;
                 isHopping = false;
+
+                // Animation: idle
+                animator.SetBool("isJumping", false);
+                animator.SetBool("isIdle", true);
             }
         }
+    }
+
+    protected override void Die()
+    {
+        if (animator != null)
+        {
+            animator.SetBool("isJumping", false);
+            animator.SetBool("isIdle", false);
+            animator.SetTrigger("isDead");
+
+            // Start coroutine to wait for the death animation to finish
+            StartCoroutine(WaitForDeathAnimation());
+        }
+        else
+        {
+            base.Die();
+        }
+    }
+
+    private IEnumerator WaitForDeathAnimation()
+    {
+        // Wait until the "IsDead" animation has finished
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        float animationDuration = stateInfo.length;
+
+        // Wait until the animation is complete
+        yield return new WaitForSeconds(animationDuration);
+
+        // Now call the base Die() method to handle destruction
+        base.Die();
     }
 }

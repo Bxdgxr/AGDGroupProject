@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 1a6be4452c571bb4abf7e09ac647cb67
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3450725236717539566
+    second: SpritesheetSword_0
+  - first:
+      213: 8303373147554665340
+    second: SpritesheetSword_1
+  - first:
+      213: -6368573320027162036
+    second: SpritesheetSword_2
+  - first:
+      213: 4587364346186872512
+    second: SpritesheetSword_3
+  - first:
+      213: -3279127387985951201
+    second: SpritesheetSword_4
+  - first:
+      213: 1133293481451171257
+    second: SpritesheetSword_5
+  - first:
+      213: 3108564777644514166
+    second: SpritesheetSword_6
+  - first:
+      213: 674456965232996387
+    second: SpritesheetSword_7
+  - first:
+      213: 3035493869883473241
+    second: SpritesheetSword_8
+  - first:
+      213: 7503459850102972848
+    second: SpritesheetSword_9
+  - first:
+      213: -3790781747398987601
+    second: SpritesheetSword_10
+  - first:
+      213: 3990236686983582694
+    second: SpritesheetSword_11
+  - first:
+      213: -2782520521150835339
+    second: SpritesheetSword_12
+  - first:
+      213: 4955744444548090428
+    second: SpritesheetSword_13
+  - first:
+      213: -7252565923733974730
+    second: SpritesheetSword_14
+  - first:
+      213: -1367176765465204757
+    second: SpritesheetSword_15
+  - first:
+      213: -583919877296957812
+    second: SpritesheetSword_16
+  - first:
+      213: 935916944532037832
+    second: SpritesheetSword_17
+  - first:
+      213: -5049456929788816629
+    second: SpritesheetSword_18
+  - first:
+      213: 1739410162983005610
+    second: SpritesheetSword_19
+  - first:
+      213: 5497721619760116410
+    second: SpritesheetSword_20
+  - first:
+      213: 8362555140551109592
+    second: SpritesheetSword_21
+  - first:
+      213: 3072667242549627526
+    second: SpritesheetSword_22
+  - first:
+      213: -1227702162570088399
+    second: SpritesheetSword_23
+  - first:
+      213: -3419915337281572129
+    second: SpritesheetSword_24
+  - first:
+      213: 7887062015177647323
+    second: SpritesheetSword_25
+  - first:
+      213: -8323612981110710422
+    second: SpritesheetSword_26
+  - first:
+      213: -2086456939471098824
+    second: SpritesheetSword_27
+  - first:
+      213: 1721547090329397396
+    second: SpritesheetSword_28
+  - first:
+      213: -6366300007729937725
+    second: SpritesheetSword_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 85
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpritesheetSword_0
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 130
+        width: 1745
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee05600f15073ef20800000000000000
+      internalID: 3450725236717539566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetSword_1
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 653
+        width: 1745
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6610cb04337bf10408fcc93f1943421d
+      internalID: 8303373147554665340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetSword_2
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 392
+        width: 1745
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e11d96c9dfb414992dfbcb35f4167c
+      internalID: -6368573320027162036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesheetSword_3
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 854
+        width: 1745
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15471fa7f105f1047b1af9c81420aac7
+      internalID: 4587364346186872512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 90f2db690bb54ea4e9d8887c04839585
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SpritesheetSword_0: 3450725236717539566
+      SpritesheetSword_1: 8303373147554665340
+      SpritesheetSword_10: -3790781747398987601
+      SpritesheetSword_11: 3990236686983582694
+      SpritesheetSword_12: -2782520521150835339
+      SpritesheetSword_13: 4955744444548090428
+      SpritesheetSword_14: -7252565923733974730
+      SpritesheetSword_15: -1367176765465204757
+      SpritesheetSword_16: -583919877296957812
+      SpritesheetSword_17: 935916944532037832
+      SpritesheetSword_18: -5049456929788816629
+      SpritesheetSword_19: 1739410162983005610
+      SpritesheetSword_2: -6368573320027162036
+      SpritesheetSword_20: 5497721619760116410
+      SpritesheetSword_21: 8362555140551109592
+      SpritesheetSword_22: 3072667242549627526
+      SpritesheetSword_23: -1227702162570088399
+      SpritesheetSword_24: -3419915337281572129
+      SpritesheetSword_25: 7887062015177647323
+      SpritesheetSword_26: -8323612981110710422
+      SpritesheetSword_27: -2086456939471098824
+      SpritesheetSword_28: 1721547090329397396
+      SpritesheetSword_29: -6366300007729937725
+      SpritesheetSword_3: 4587364346186872512
+      SpritesheetSword_4: -3279127387985951201
+      SpritesheetSword_5: 1133293481451171257
+      SpritesheetSword_6: 3108564777644514166
+      SpritesheetSword_7: 674456965232996387
+      SpritesheetSword_8: 3035493869883473241
+      SpritesheetSword_9: 7503459850102972848
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

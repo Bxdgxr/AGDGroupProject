@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: fcdafa0ca3ec65741b1f265a859087aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5297031961572753854
+    second: Dungeon_Props-Sheet_0
+  - first:
+      213: -6432729550271135381
+    second: Dungeon_Props-Sheet_1
+  - first:
+      213: -2109300334462458003
+    second: Dungeon_Props-Sheet_2
+  - first:
+      213: 5085515662542773811
+    second: Dungeon_Props-Sheet_3
+  - first:
+      213: 3053507944819470177
+    second: Dungeon_Props-Sheet_4
+  - first:
+      213: 6928896727639916361
+    second: Dungeon_Props-Sheet_5
+  - first:
+      213: -1275058523969874211
+    second: Dungeon_Props-Sheet_6
+  - first:
+      213: 5606996991427325807
+    second: Dungeon_Props-Sheet_7
+  - first:
+      213: 9216784699093550948
+    second: Dungeon_Props-Sheet_8
+  - first:
+      213: 6949364309326669365
+    second: Dungeon_Props-Sheet_9
+  - first:
+      213: 1799621214536172900
+    second: Dungeon_Props-Sheet_10
+  - first:
+      213: -176627331933473737
+    second: Dungeon_Props-Sheet_11
+  - first:
+      213: -1463331062970737820
+    second: Dungeon_Props-Sheet_12
+  - first:
+      213: 2813602065316983330
+    second: Dungeon_Props-Sheet_13
+  - first:
+      213: 2056696212273746707
+    second: Dungeon_Props-Sheet_14
+  - first:
+      213: 6384951433128444755
+    second: Dungeon_Props-Sheet_15
+  - first:
+      213: 5497614884677813413
+    second: Dungeon_Props-Sheet_16
+  - first:
+      213: 7036172315201382655
+    second: Dungeon_Props-Sheet_17
+  - first:
+      213: -3156862872281391377
+    second: Dungeon_Props-Sheet_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dungeon_Props-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 369
+        width: 55
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24eb09eee792d76b0800000000000000
+      internalID: -5297031961572753854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Props-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 369
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b614eeb5e8a5ab6a0800000000000000
+      internalID: -6432729550271135381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Props-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 377
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d67a0c775824ab2e0800000000000000
+      internalID: -2109300334462458003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Props-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 377
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33e1c850d81639640800000000000000
+      internalID: 5085515662542773811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Props-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 377
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f2cc13c4d306a20800000000000000
+      internalID: 3053507944819470177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Props-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 335
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ff758ecd2682060800000000000000
+      internalID: 6928896727639916361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Props-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 335
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd611fa27051e4ee0800000000000000
+      internalID: -1275058523969874211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Props-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 335
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6fa5ba7e0e00dd40800000000000000
+      internalID: 5606996991427325807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Props-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 332
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4670ab8e9d898ef70800000000000000
+      internalID: 9216784699093550948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Props-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 344
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536a130250a117060800000000000000
+      internalID: 6949364309326669365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Props-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 344
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4658fa6b5f989f810800000000000000
+      internalID: 1799621214536172900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Props-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 339
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 734fa7e906e7c8df0800000000000000
+      internalID: -176627331933473737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Props-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 344
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46b95dab62431bbe0800000000000000
+      internalID: -1463331062970737820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Props-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 321
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 222368adb2ceb0720800000000000000
+      internalID: 2813602065316983330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Props-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 308
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313d777ee4ada8c10800000000000000
+      internalID: 2056696212273746707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Props-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 308
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3530ebfdf77eb9850800000000000000
+      internalID: 6384951433128444755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Props-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 308
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a40f192c937b4c40800000000000000
+      internalID: 5497614884677813413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Props-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 308
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff82402017185a160800000000000000
+      internalID: 7036172315201382655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon_Props-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 306
+        width: 44
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee5c0581f19034d0800000000000000
+      internalID: -3156862872281391377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Dungeon_Props-Sheet_0: -5297031961572753854
+      Dungeon_Props-Sheet_1: -6432729550271135381
+      Dungeon_Props-Sheet_10: 1799621214536172900
+      Dungeon_Props-Sheet_11: -176627331933473737
+      Dungeon_Props-Sheet_12: -1463331062970737820
+      Dungeon_Props-Sheet_13: 2813602065316983330
+      Dungeon_Props-Sheet_14: 2056696212273746707
+      Dungeon_Props-Sheet_15: 6384951433128444755
+      Dungeon_Props-Sheet_16: 5497614884677813413
+      Dungeon_Props-Sheet_17: 7036172315201382655
+      Dungeon_Props-Sheet_18: -3156862872281391377
+      Dungeon_Props-Sheet_2: -2109300334462458003
+      Dungeon_Props-Sheet_3: 5085515662542773811
+      Dungeon_Props-Sheet_4: 3053507944819470177
+      Dungeon_Props-Sheet_5: 6928896727639916361
+      Dungeon_Props-Sheet_6: -1275058523969874211
+      Dungeon_Props-Sheet_7: 5606996991427325807
+      Dungeon_Props-Sheet_8: 9216784699093550948
+      Dungeon_Props-Sheet_9: 6949364309326669365
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

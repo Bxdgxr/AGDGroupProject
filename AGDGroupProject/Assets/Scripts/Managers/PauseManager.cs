@@ -27,6 +27,15 @@ public class PauseManager : MonoBehaviour
 
     public void LoadMainMenu()
     {
+    {
+        // Clear player name
+        if (PlayerProfile.Instance != null)
+            PlayerProfile.Instance.ResetName();
+
+        // Clear inventory and hotbar
+        if (InventoryData.Instance != null)
+            InventoryData.Instance.ClearAll();
+    }
         Time.timeScale = 1f; // Ensure game unfreezes
         SceneManager.LoadScene("Main Menu"); // Replace with your menu scene name
     }

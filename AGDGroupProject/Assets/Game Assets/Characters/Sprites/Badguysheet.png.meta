@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: 6fb0afa24bd0e0842abccfefba8fb292
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8713240754908225850
+    second: Badguysheet_0
+  - first:
+      213: -7179977427238738611
+    second: Badguysheet_1
+  - first:
+      213: 368949436804458820
+    second: Badguysheet_2
+  - first:
+      213: 3127132327472375200
+    second: Badguysheet_3
+  - first:
+      213: 4869891091168794937
+    second: Badguysheet_4
+  - first:
+      213: -8987409381464820873
+    second: Badguysheet_5
+  - first:
+      213: 4186522327451471347
+    second: Badguysheet_6
+  - first:
+      213: -464562604052702455
+    second: Badguysheet_7
+  - first:
+      213: 6663694513079031265
+    second: Badguysheet_8
+  - first:
+      213: -7181813135077100185
+    second: Badguysheet_9
+  - first:
+      213: -564944215138667339
+    second: Badguysheet_10
+  - first:
+      213: 9159355177967204279
+    second: Badguysheet_11
+  - first:
+      213: -6506344087321436912
+    second: Badguysheet_12
+  - first:
+      213: -5906700769114237639
+    second: Badguysheet_13
+  - first:
+      213: -3636859195738846904
+    second: Badguysheet_14
+  - first:
+      213: -5685973355445871011
+    second: Badguysheet_15
+  - first:
+      213: 4144482935044391950
+    second: Badguysheet_16
+  - first:
+      213: -5804735236782502361
+    second: Badguysheet_17
+  - first:
+      213: 1976068418407559908
+    second: Badguysheet_18
+  - first:
+      213: -7924249071505773598
+    second: Badguysheet_19
+  - first:
+      213: 8770384014928842853
+    second: Badguysheet_20
+  - first:
+      213: -2591297705414910287
+    second: Badguysheet_21
+  - first:
+      213: 3686115202834237735
+    second: Badguysheet_22
+  - first:
+      213: -616389234714274505
+    second: Badguysheet_23
+  - first:
+      213: 8341887503329180550
+    second: Badguysheet_24
+  - first:
+      213: 793035111003968407
+    second: Badguysheet_25
+  - first:
+      213: -1441925122872272148
+    second: Badguysheet_26
+  - first:
+      213: -4490108932743259845
+    second: Badguysheet_27
+  - first:
+      213: 8379639892799495373
+    second: Badguysheet_28
+  - first:
+      213: 3954456988621944944
+    second: Badguysheet_29
+  - first:
+      213: -2675430632154880979
+    second: Badguysheet_30
+  - first:
+      213: 5669035673138705554
+    second: Badguysheet_31
+  - first:
+      213: -8640934255957007661
+    second: Badguysheet_32
+  - first:
+      213: -3277263533626923247
+    second: Badguysheet_33
+  - first:
+      213: 6404804140386493704
+    second: Badguysheet_34
+  - first:
+      213: 1148187809144481718
+    second: Badguysheet_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 90
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Badguysheet_0
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1351
+        width: 68
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce1d39b2b9541780800000000000000
+      internalID: -8713240754908225850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_1
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1355
+        width: 68
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d45ac1232989b5c90800000000000000
+      internalID: -7179977427238738611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_2
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 1357
+        width: 68
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4496fc8de85ce1500800000000000000
+      internalID: 368949436804458820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_3
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1356
+        width: 66
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5a1a8984ec56b20800000000000000
+      internalID: 3127132327472375200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_4
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 1358
+        width: 66
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93994f74524559340800000000000000
+      internalID: 4869891091168794937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_5
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1354
+        width: 66
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773b6cee8ce464380800000000000000
+      internalID: -8987409381464820873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_6
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1089
+        width: 65
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fd8cfb20e3891a30800000000000000
+      internalID: 4186522327451471347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_7
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1094
+        width: 65
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90b1281e5ca8d89f0800000000000000
+      internalID: -464562604052702455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_8
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1090
+        width: 65
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e59bc79ad23a7c50800000000000000
+      internalID: 6663694513079031265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_9
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 1082
+        width: 64
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 765be782103155c90800000000000000
+      internalID: -7181813135077100185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_10
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 1081
+        width: 64
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b47fb2ca3ae828f0800000000000000
+      internalID: -564944215138667339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_11
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 1087
+        width: 64
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b7be5a81019c1f70800000000000000
+      internalID: 9159355177967204279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_12
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 824
+        width: 71
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d1eb05682d4b5a0800000000000000
+      internalID: -6506344087321436912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_13
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 824
+        width: 71
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9355b6e02fe270ea0800000000000000
+      internalID: -5906700769114237639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_14
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 826
+        width: 71
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8498fd394d7478dc0800000000000000
+      internalID: -3636859195738846904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_15
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 819
+        width: 71
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e105adb5d5711b0800000000000000
+      internalID: -5685973355445871011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_16
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 823
+        width: 71
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e044df06549248930800000000000000
+      internalID: 4144482935044391950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_17
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 824
+        width: 71
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ec2649e00717fa0800000000000000
+      internalID: -5804735236782502361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_18
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 562
+        width: 71
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e2fc03c1c76c6b10800000000000000
+      internalID: 1976068418407559908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_19
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 566
+        width: 71
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ebed253479670290800000000000000
+      internalID: -7924249071505773598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_20
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 564
+        width: 71
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56019994bc9a6b970800000000000000
+      internalID: 8770384014928842853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_21
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 566
+        width: 71
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be9579577cd90cd0800000000000000
+      internalID: -2591297705414910287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_22
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 566
+        width: 71
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7290a124f36b72330800000000000000
+      internalID: 3686115202834237735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_23
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 564
+        width: 71
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7351b7db1452277f0800000000000000
+      internalID: -616389234714274505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_24
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 319
+        width: 65
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68bb430bc7654c370800000000000000
+      internalID: 8341887503329180550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_25
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 319
+        width: 65
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 793ddc55b3d610b00800000000000000
+      internalID: 793035111003968407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_26
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 322
+        width: 65
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea9c7a8db04dfbe0800000000000000
+      internalID: -1441925122872272148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_27
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 318
+        width: 65
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b39970d17bdefa1c0800000000000000
+      internalID: -4490108932743259845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_28
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 318
+        width: 65
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc9104d5167a4470800000000000000
+      internalID: 8379639892799495373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_29
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 321
+        width: 65
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0783f56fdad01e630800000000000000
+      internalID: 3954456988621944944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_30
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 61
+        width: 65
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24a53dd306fedad0800000000000000
+      internalID: -2675430632154880979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_31
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 55
+        width: 65
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294337ca8e57cae40800000000000000
+      internalID: 5669035673138705554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_32
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 57
+        width: 65
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d2ad2a631c351880800000000000000
+      internalID: -8640934255957007661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_33
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 53
+        width: 65
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11763da0e22d482d0800000000000000
+      internalID: -3277263533626923247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_34
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 55
+        width: 65
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80520bb7e6f62e850800000000000000
+      internalID: 6404804140386493704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Badguysheet_35
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 55
+        width: 65
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7ad73aabe2fef00800000000000000
+      internalID: 1148187809144481718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bef1c3d7fb76d4045be5e5b587bc1537
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Badguysheet_0: -8713240754908225850
+      Badguysheet_1: -7179977427238738611
+      Badguysheet_10: -564944215138667339
+      Badguysheet_11: 9159355177967204279
+      Badguysheet_12: -6506344087321436912
+      Badguysheet_13: -5906700769114237639
+      Badguysheet_14: -3636859195738846904
+      Badguysheet_15: -5685973355445871011
+      Badguysheet_16: 4144482935044391950
+      Badguysheet_17: -5804735236782502361
+      Badguysheet_18: 1976068418407559908
+      Badguysheet_19: -7924249071505773598
+      Badguysheet_2: 368949436804458820
+      Badguysheet_20: 8770384014928842853
+      Badguysheet_21: -2591297705414910287
+      Badguysheet_22: 3686115202834237735
+      Badguysheet_23: -616389234714274505
+      Badguysheet_24: 8341887503329180550
+      Badguysheet_25: 793035111003968407
+      Badguysheet_26: -1441925122872272148
+      Badguysheet_27: -4490108932743259845
+      Badguysheet_28: 8379639892799495373
+      Badguysheet_29: 3954456988621944944
+      Badguysheet_3: 3127132327472375200
+      Badguysheet_30: -2675430632154880979
+      Badguysheet_31: 5669035673138705554
+      Badguysheet_32: -8640934255957007661
+      Badguysheet_33: -3277263533626923247
+      Badguysheet_34: 6404804140386493704
+      Badguysheet_35: 1148187809144481718
+      Badguysheet_4: 4869891091168794937
+      Badguysheet_5: -8987409381464820873
+      Badguysheet_6: 4186522327451471347
+      Badguysheet_7: -464562604052702455
+      Badguysheet_8: 6663694513079031265
+      Badguysheet_9: -7181813135077100185
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
